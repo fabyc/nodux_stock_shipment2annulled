@@ -1,0 +1,32 @@
+#
+msgid ""
+msgstr "Content-Type: text/plain; charset=utf-8\n"
+
+msgctxt "field:stock.anull_shipment.start,id:"
+msgid "ID"
+msgstr "Identificador"
+
+msgctxt "model:ir.action,name:wizard_anull_shipment"
+msgid "Annul Shipment Internal"
+msgstr "Anular Movimiento Interno"
+
+msgctxt ""
+"model:ir.action.act_window.domain,name:act_shipment_internal_form_domain_anulled"
+msgid "Anulled"
+msgstr "Anulado"
+
+msgctxt "model:stock.anull_shipment.start,name:"
+msgid "Anull Shipment Start"
+msgstr "Anular Movimiento Interno"
+
+msgctxt "selection:stock.shipment.internal,state:"
+msgid "Annulled"
+msgstr "Anulada"
+
+msgctxt "wizard_button:stock.anull_shipment,start,anull_:"
+msgid "Anull"
+msgstr "Anular"
+
+msgctxt "wizard_button:stock.anull_shipment,start,end:"
+msgid "Exit"
+msgstr "Salir"

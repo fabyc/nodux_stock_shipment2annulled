@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<tryton>
+    <data>
+      <record model="ir.ui.view" id="anull_stock_start_view_form">
+          <field name="model">stock.anull_shipment.start</field>
+          <field name="type">form</field>
+          <field name="name">anull_shipment_start_form</field>
+      </record>
+
+      <record model="ir.action.wizard" id="wizard_anull_shipment">
+          <field name="name">Annul Shipment Internal</field>
+          <field name="wiz_name">stock.anull_shipment</field>
+          <field name="model">stock.shipment.internal</field>
+      </record>
+      <record model="ir.action.keyword" id="act_wizard_annul_shipment_keyword">
+          <field name="keyword">form_action</field>
+          <field name="model">stock.shipment.internal,-1</field>
+          <field name="action" ref="wizard_anull_shipment"/>
+      </record>
+
+      <record model="ir.action.act_window.domain"
+          id="act_shipment_internal_form_domain_anulled">
+          <field name="name">Anulled</field>
+          <field name="sequence" eval="40"/>
+          <field name="domain">[('state', '=', 'annulled')]</field>
+          <field name="act_window" ref="stock.act_shipment_internal_form"/>
+      </record>
+
+    </data>
+</tryton>
